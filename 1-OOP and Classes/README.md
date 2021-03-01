@@ -1,6 +1,7 @@
+# Course Discription:
 These are some files I made as part of my PCPP course (PCPP1 1/5 Advanced Object-Oriented Programming and Classes on edube.org) focussing on learning about classes, instances, attributes, and methods; shallow and deep operations, polymorphism, special methods, static and class methods, abstract classes, method overriding, composition, inheritance, subclassing, encapsulation, advanced techniques of exception handling, serialization of Python objects (the pickle module), the shelve module, decorators, and metaprogramming.
 
-# contents senarios
+# Senarios and Explnations of Contents 
 
 ## 1.1.1.6-Phone_class:
 ### Objectives
@@ -29,7 +30,9 @@ calling 555-34343
 mobile phone is turned off  
 mobile phone is turned off  
 ```
+
 ### My results:  
+As demonstrated in the code, phone numbers can be strings, as maybe need if numbers include a separator for the prefix i.e. `1234 56789, 9876-54321` as aposed to all one number `123456789`.
 ```
 mobile phone 1000 is turned on  
 mobile phone 2000 is turned on  
@@ -38,7 +41,19 @@ mobile phone is turned off
 mobile phone is turned off  
 ```
 
-## 1.2.1.8 
+
+## 1.2.1.7-Phone_super_class_example:
+Useful example of super classes and instanse/class variables. (not mine)
+Another example shows that a class variable of a super class can be used to count the number of all objects created from the descendant classes (subclasses). We'll achieve this by calling the superclass `__init__` method.
+
+Another class variable is used to keep track of the serial numbers (which in fact are also counters) of particular subclass instances. In this example, we are also storing instance data (phone numbers) in instance variables.
+
+The class `Phone` is a class representing a blueprint of generic devices used for calling. This class definition delivers the `call` method, which displays the object’s variable, which holds the phone number. This class also holds a class variable that is used to count the number of instances created by its subclasses.
+
+Subclasses make use of the superclass `__init__` method, then instances are created. This gives us the possibility to increment the superclass variable.
+
+
+## 1.2.1.8-Apples:
 ### Objectives
 - creating classes, class and instance variables;
 - accessing class and instance variables;

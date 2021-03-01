@@ -11,8 +11,8 @@ class Phone:
     def call(self, number):
        return f"calling {number}"
 
-mob1 = phone("1000")
-mob2 = phone(2000)
+mob1 = Phone("1000")
+mob2 = Phone(2000)
 
 print(mob1.turn_on())
 print(mob2.turn_on())
