@@ -9,7 +9,6 @@ These are some files I made as part of my PCPP course (PCPP1 1/5 Advanced Object
 - calling methods;
 - getting simple access to instance variables;  
 
-![Mobile phone]()
 
 ### Scenario
 - create a class representing a mobile phone;
@@ -43,7 +42,8 @@ mobile phone is turned off
 
 
 ## 1.2.1.7-Phone_super_class_example:
-Useful example of super classes and instanse/class variables. (not mine)
+Useful example of super classes and instanse/class variables. (not mine):  
+
 Another example shows that a class variable of a super class can be used to count the number of all objects created from the descendant classes (subclasses). We'll achieve this by calling the superclass `__init__` method.
 
 Another class variable is used to keep track of the serial numbers (which in fact are also counters) of particular subclass instances. In this example, we are also storing instance data (phone numbers) in instance variables.
