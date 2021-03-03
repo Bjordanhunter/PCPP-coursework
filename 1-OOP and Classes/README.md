@@ -3,11 +3,11 @@ These are some files I made as part of my PCPP course (PCPP1 1/5 Advanced Object
 
 # Scenarios and Explanations of Contents 
 
-1. [1.1.1.6-Phone_class - lab](#1.1.1.6-Phone_class)  
-2. [1.2.1.7-Phone_super_class_example - example](#1.2.1.7-Phone_super_class_example)  
-3. [1.2.1.8-Apples - lab](#1.2.1.8-Apples)  
-4. [2.1.1.10-Time_class_1 - lab](#2.1.1.10-Time_class_1)  
-5. [2.1.1.11-Time_class_2 - lab](#2.1.1.11-Time_class_2)  
+1. [1.1.1.6-Phone_class - lab](#1116-Phone_class)  
+2. [1.2.1.7-Phone_super_class_example - example](#1217-Phone_super_class_example)  
+3. [1.2.1.8-Apples - lab](#1218-Apples)  
+4. [2.1.1.10-Time_class_1 - lab](#21110-Time_class_1)  
+5. [2.1.1.11-Time_class_2 - lab](#21111-Time_class_2)  
 6. [2.2.1.6- - lab](#2.2.1.6-)
 
 ---
