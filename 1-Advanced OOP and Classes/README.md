@@ -8,7 +8,8 @@ These are some files I made as part of my PCPP course (PCPP1 1/5 Advanced Object
 3. [1.2.1.8-Apples - lab](#1218-Apples)  
 4. [2.1.1.10-Time_class_1 - lab](#21110-Time_class_1)  
 5. [2.1.1.11-Time_class_2 - lab](#21111-Time_class_2)  
-6. [2.2.1.6- - lab](#2.2.1.6-)
+6. [2.2.1.6-Multiple_inheritance - lab](#2.2.1.6-Multiple_inheritance)
+7. [2.4.1.7-Timestamp_logger - lab](#2.4.1.7-Timestamp_logger)
 
 ---
 ## 1.1.1.6-Phone_class:
@@ -207,4 +208,97 @@ Again I only looked at the hint after I had finished, but I found that I impleme
 
 ---
 
-## 2.2.1.6-
+## 2.2.1.6-Multiple_inheritance:
+### Objectives
+- improving the student's skills in operating with multiple inheritance;
+- pointing out the nature of multiple inheritance problems.
+
+### Scenario
+- Your task is to build a multifunction device (MFD) class consisting of methods responsible for document scanning, printing, and sending via fax.
+- The methods are delivered by the following classes:
+    - scan(), delivered by the Scanner class;
+    - print(), delivered by the Printer class;
+    - send() and print(), delivered by the Fax class.
+- Each method should print a message indicating its purpose and origin, like:
+    - 'print() method from Printer class'
+    - 'send() method from Fax class'
+- create an MFD_SPF class ('SPF' means 'Scanner', 'Printer', 'Fax'), then instantiate it;
+- create an MFD_SFP class ('SFP' means 'Scanner', 'Fax', 'Printer'), then instantiate it;
+- on each object call the methods: scan(), print(), send();
+- observe the output differences. Was the Printer class utilized each time?
+
+### My results:
+Printer was only used when initialised first.
+```
+Printer THEN Fax
+scan() method from Scanner
+print() method from Printer
+send() method from Fax
+
+Fax THEN Printer
+scan() method from Scanner
+print() method from Fax
+send() method from Fax
+```
+
+---
+
+## 2.4.1.7-Timestamp_logger:
+### Objectives
+- Improving the student's skills in creating decorators and operating with them.
+
+### Scenario
+- Create a function decorator that prints a timestamp (in a form like year-month-day hour:minute:seconds, eg. 2019-11-05 08:33:22)
+- Create a few ordinary functions that do some simple tasks, like adding or multiplying two numbers.
+- Apply your decorator to those functions to ensure that the time of the function executions can be monitored.
+
+### Hint:
+
+To print the current time, you could use the following code:
+```
+# import module responsible for time processing
+from datetime import datetime
+
+# get current time using now() method
+timestamp = datetime.now()
+
+# convert timestamp to human-readable string, following passed pattern:
+string_timestamp = timestamp.strftime('%Y-%m-%d %H:%M:%S')
+
+print(string_timestamp)
+```
+
+
+## My results:
+This did take me a little longer then I would've liked as I was overthinking it a bit and added the ability to track how long the function took.
+
+output:
+```
+
+2021-03-15 11:46:45
+2+0= 2
+'add' took 0.028887s to run
+
+2021-03-15 11:46:45
+2*0= 0
+'mult' took 0.013019s to run
+----------
+
+2021-03-15 11:46:47
+2+1= 3
+'add' took 0.022045s to run
+
+2021-03-15 11:46:47
+2*1= 2
+'mult' took 0.020017s to run
+----------
+
+2021-03-15 11:46:48
+2+2= 4
+'add' took 0.028801s to run
+
+2021-03-15 11:46:48
+2*2= 4
+'mult' took 0.02099s to run
+----------
+```
